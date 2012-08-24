@@ -1,0 +1,364 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>PyDuino</class>
+ <widget class="QMainWindow" name="PyDuino">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>331</width>
+    <height>288</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>PyDuino</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="0" column="1">
+     <widget class="QTabWidget" name="tabWidget">
+      <property name="layoutDirection">
+       <enum>Qt::LeftToRight</enum>
+      </property>
+      <property name="tabPosition">
+       <enum>QTabWidget::South</enum>
+      </property>
+      <property name="currentIndex">
+       <number>0</number>
+      </property>
+      <widget class="QWidget" name="tab">
+       <attribute name="title">
+        <string>Read</string>
+       </attribute>
+       <layout class="QGridLayout" name="gridLayout_2">
+        <item row="1" column="0">
+         <widget class="QComboBox" name="readComboBox">
+          <item>
+           <property name="text">
+            <string>D 0</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>D 1</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>D 2</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>D 3</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>D 4</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>D 5</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>D 6</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>D 7</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>D 8</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>D 9</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>D 10</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>D 11</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>D 12</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>D 13</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>A 0</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>A 1</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>A 2</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>A 3</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>A 4</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>A 5</string>
+           </property>
+          </item>
+         </widget>
+        </item>
+        <item row="1" column="1">
+         <widget class="QPushButton" name="readButton">
+          <property name="text">
+           <string>Read</string>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="0" colspan="2">
+         <widget class="QLCDNumber" name="readLcdNumber"/>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="tab_2">
+       <attribute name="title">
+        <string>Analog Write</string>
+       </attribute>
+       <layout class="QGridLayout" name="gridLayout_3">
+        <item row="0" column="0">
+         <widget class="QDial" name="dial">
+          <property name="maximum">
+           <number>255</number>
+          </property>
+         </widget>
+        </item>
+        <item row="0" column="1">
+         <widget class="QLCDNumber" name="analogWriteLcdNumber"/>
+        </item>
+        <item row="1" column="0">
+         <widget class="QComboBox" name="analogWriteComboBox">
+          <item>
+           <property name="text">
+            <string>Pin 3</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Pin 5</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Pin 6</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Pin 10</string>
+           </property>
+          </item>
+          <item>
+           <property name="text">
+            <string>Pin 11</string>
+           </property>
+          </item>
+         </widget>
+        </item>
+        <item row="1" column="1">
+         <widget class="QPushButton" name="analogWriteButton">
+          <property name="text">
+           <string>Write</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="tab_3">
+       <attribute name="title">
+        <string>Digital Write</string>
+       </attribute>
+       <layout class="QGridLayout" name="gridLayout_5">
+        <item row="0" column="0">
+         <layout class="QGridLayout" name="gridLayout_4">
+          <item row="1" column="1">
+           <widget class="QComboBox" name="digitalWriteStatus">
+            <item>
+             <property name="text">
+              <string>1</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>0</string>
+             </property>
+            </item>
+           </widget>
+          </item>
+          <item row="1" column="2">
+           <widget class="QPushButton" name="digitalWriteButton">
+            <property name="text">
+             <string>Write</string>
+            </property>
+           </widget>
+          </item>
+          <item row="0" column="0" colspan="3">
+           <widget class="QLCDNumber" name="digitalWriteLcdNumber"/>
+          </item>
+          <item row="1" column="0">
+           <widget class="QComboBox" name="digitalWriteComboBox">
+            <item>
+             <property name="text">
+              <string>D 0</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>D 1</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>D 2</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>D 3</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>D 4</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>D 5</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>D 6</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>D 7</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>D 8</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>D 9</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>D 10</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>D 11</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>D 12</string>
+             </property>
+            </item>
+            <item>
+             <property name="text">
+              <string>D 13</string>
+             </property>
+            </item>
+           </widget>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </widget>
+      <widget class="QWidget" name="tab_4">
+       <attribute name="title">
+        <string>About</string>
+       </attribute>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>331</width>
+     <height>25</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuSerial_Port">
+    <property name="title">
+     <string>Config</string>
+    </property>
+    <addaction name="actionSerial_Port"/>
+   </widget>
+   <addaction name="menuSerial_Port"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionSerial_Port">
+   <property name="text">
+    <string>Serial Port</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>dial</sender>
+   <signal>dialMoved(int)</signal>
+   <receiver>analogWriteLcdNumber</receiver>
+   <slot>display(int)</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>162</x>
+     <y>159</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>232</x>
+     <y>139</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>
